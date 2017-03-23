@@ -1,0 +1,107 @@
+article {
+    width: 1200px;
+    margin: 80px auto;
+    h2 {
+        padding-left: 30px;
+        font-size: 28px;
+        border-bottom: 1px solid #999;
+        span {
+            font-size: 18px;
+            color: #868686;
+        }
+    }
+    .lists {
+        width: 1140px;
+        margin: 30px auto;
+        li {
+            height: 276px;
+            margin-top: 30px;
+            .left, .right {
+                float: left;
+            }
+            .left {
+                width: 150px;
+                height: 276px;
+                padding-right: 30px;
+                background-color: #0073e5;
+                color: #fff;
+                text-align: right;
+                span {
+                    display: block;
+                    font-size: 80px;
+                }
+            }
+            .right {
+                position: relative;
+                width: 880px;
+                height: 256px;
+                padding: 20px 20px 0 60px;
+                background-color: rgb(245, 245, 245);
+                h3 {
+                    a {
+                        font-size: 30px;
+                        &:hover {
+                            color: #0073e5;
+//                            text-decoration: underline;
+                        }
+                    }
+                }
+                p {
+                    color: #666;
+                    text-indent: 2em;
+                }
+                span {
+                    color: #666;
+                }
+                em {
+                    font-style: normal;
+                }
+                & > a {
+                    display: block;
+                    position: absolute;
+                    right: 20px;
+                    bottom: 20px;
+                    width: 150px;
+                    height: 40px;
+                    border: 1px solid #0073e5;
+                    text-align: center;
+                    line-height: 40px;
+                    color: #0073e5;
+                    &:hover {
+                        background-color: #0073e5;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .pages {
+        margin-top: 60px;
+        text-align: center;
+        ul {
+            display: inline-block;
+        }
+        li {
+            float: left;
+            display: inline-block;
+            text-align: center;
+            a {
+                padding: 5px 10px;
+                color: #0073e5;
+                border: 1px solid #0073e5;
+                &:hover {
+                    background-color: #0073e5;
+                    color: #fff;
+                }
+            }
+            & + li {
+                margin-left: 10px;
+            }
+            .pagesActive {
+                background-color: #0073e5;
+                color: #fff;
+            }
+        }
+    }
+}
+
